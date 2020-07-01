@@ -14,7 +14,7 @@ class Transfer
  
  def execute_transaction 
    transaction = sender.balance - amount
-   sender.close_account 
+   sender.balance!valid?
    puts "Transaction rejected. Please check your account balance."
    
  end 

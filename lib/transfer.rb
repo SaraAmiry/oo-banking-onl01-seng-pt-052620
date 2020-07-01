@@ -14,7 +14,7 @@ class Transfer
  
  def execute_transaction 
    transaction = sender.balance - amount
-   Self.close_account 
+   BankAccount.close_account 
    
  end 
  
